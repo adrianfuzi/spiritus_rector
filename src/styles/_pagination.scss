@@ -1,0 +1,41 @@
+.pagination {
+    grid-area: paginationLinks;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 4rem;
+    
+    &__item {
+        font-size: 1.5rem;
+        // border: 1px solid $color-primary;
+        margin-right: 1rem;
+
+        &:last-child {
+            margin-right: 0;
+        }
+        
+        &--link {
+            background-color: $color-primary;
+            padding: 1rem;
+            border-radius: 2px;
+
+            transition: all .3s;
+
+            &:hover {
+                background-color: $color-primary-2;
+                transition: all .3s;
+            }
+
+            &-active {
+                background-color: $color-primary-2;
+            }
+
+            &-disabled {
+                pointer-events: none;
+                cursor: default;
+                background-color: $color-disabled;
+            }
+        }
+    }
+
+
+}

@@ -1,0 +1,94 @@
+.post {
+    margin-bottom: 4rem;
+
+    &__figure {
+        margin-bottom: 1rem;
+
+        &--image {
+            border-radius: 2px;
+            filter: grayscale(50%);
+            // box-shadow: 3px 4px 4px rgba(0, 0, 0, 0.25);
+
+            transition: all .3s;
+
+
+            &:hover {
+                // box-shadow: 3px 4px 4px rgba(0, 0, 0, 0.25);
+                box-shadow: 0px 0px 15px $color-primary-2;
+                transition: all .3s;
+            }
+        }
+
+        // Inside Post
+        &--imagePost {
+            margin-top: 8rem;
+            border-radius: 2px;
+            filter: grayscale(50%);
+        }
+    }
+
+    &__card {
+
+        &--title {
+            // text-align: center;
+            font-size: 3.2rem;
+            margin-bottom: 1rem;
+        }
+
+        &--info {
+            font-size: 1.3rem;
+            font-style: italic;
+            margin-bottom: 1rem;
+        }
+
+        &--body {
+            font-size: 1.9rem;
+            margin-bottom: 2rem;
+        }
+
+        &--tags {
+            display: flex;
+            list-style: none;
+            font-size: 1.5rem;
+            margin-bottom: 2rem;
+
+            &-tag {
+                border: 1px solid $color-primary;
+                background-color: $color-primary;
+                border-radius: 2px;
+                padding: .5rem;
+                margin-right: 1rem;
+                transition: all .3s;
+
+
+                &:hover {
+                    background-color: $color-primary-2;
+                    transition: all .3s;
+                }
+            }
+        }
+
+        &--more {
+            text-align: right;
+            font-size: 1.8rem;
+            width: auto;
+            
+            &-btn {
+                transition: text-shadow .3s;
+
+                &:hover {
+                    text-shadow: 0px 0px 15px $color-primary-3;
+    
+                    transition: text-shadow .3s;
+                }
+            }
+
+            &::after {
+                display: flex;
+                content: '';
+                margin-top: 2rem;
+                border-top: 1px solid $color-primary;
+            }
+        }
+    }
+}

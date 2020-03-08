@@ -1,0 +1,69 @@
+.latestWorks {
+    grid-area: latestWorks;
+
+    &__title {
+        font-size: 1.5rem;
+        margin-bottom: 2rem;
+    }
+
+    &__container {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__figure {
+        margin-right: 1rem;
+        position: relative;
+        transition: transform .5s;
+
+        &:last-child {
+            margin-right: 0;
+        }
+
+        &:hover {
+            transform: scale(150%);
+            z-index: 100;
+            transition: transform .3s;
+
+            .latestWorks__figure-title {
+                opacity: 1;
+                transform: translateY(-9.5rem);
+                transition: all .3s;
+                transition-delay: .2s;
+            }
+        }
+
+        &-img {
+            width: 8rem;
+            height: 4.5rem;
+            border-radius: 1px;
+    
+            filter: grayscale(50%);
+        }
+
+        &-title {
+            opacity: 0;
+            font-size: 1.2rem;
+            position: absolute;
+            text-align: center;
+            transform: translateY(-8.5rem);
+            background-color: $color-secondary-3;
+            border: 1px solid $color-primary;
+            padding: .5rem;
+            transition: all .3s;
+            text-shadow: 0px 0px 15px $color-primary-3;
+            border-radius: 2px 2px 0 0;
+
+            z-index: 1;
+        }
+
+    }
+
+    &::after {
+        display: block;
+        content: '';
+        margin-top: 2rem;
+        width: 100%;
+        border-top: 1px solid $color-primary;
+    } 
+}

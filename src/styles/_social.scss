@@ -1,0 +1,33 @@
+.social {
+    grid-area: social;
+    text-align: center;
+    margin-top: 1rem;
+    
+    &__item {
+        margin-right: 1rem;
+        transition: all .3s;
+
+        filter: brightness(90%);
+
+        &:last-child {
+            margin-right: 0;
+        }
+
+
+        &:hover {
+            cursor: pointer;
+
+            filter: brightness(200%);
+
+            transition: all .3s;
+        }
+    }
+
+    &::after {
+        display: block;
+        content: '';
+        margin-top: 2rem;
+        width: 100%;
+        border-top: 1px solid $color-primary;
+    }
+}
