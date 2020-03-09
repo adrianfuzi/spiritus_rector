@@ -2,6 +2,7 @@
     grid-area: content;
     
     margin: 5rem 0;
+    padding: 8rem 0 5rem 0;
     width: 63vw;
     border-radius: 2px;
     
@@ -17,9 +18,18 @@
         ". post ."
         ". paginationLinks .";
 
+    @media only screen and (max-width: $bp-l-2) {
+        margin: 0;
+        width: 75vw;
+    }
+
+    @media only screen and (max-width: $bp-m-1) {
+        width: 80vw;
+    }
+
     &__title {
         grid-area: contentTitle;
-        margin: 8rem 0 3rem;
+        margin-bottom: 3rem;
     }
 
     &__page {

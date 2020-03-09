@@ -3,7 +3,7 @@
   "private": true,
   "description": "This is an educational blog-website on various topics.",
   "version": "0.1.0",
-  "author": "Adrian Füzi",
+  "author": "Spiritus Rector",
   "dependencies": {
     "gatsby": "^2.19.7",
     "gatsby-image": "^2.2.39",

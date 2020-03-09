@@ -6,7 +6,8 @@
     font-size: 1.8rem;
     margin-left: auto;
     margin-right: auto;
-
+    // margin-top: 2rem;
+    // margin-bottom: 2rem;
     
     &__item {
         list-style: none;
@@ -17,7 +18,7 @@
         transition: text-shadow .2s;
 
         &:last-child {
-            margin-bottom: 1rem;
+            margin-bottom: 0rem;
         }
         
         &:hover {
@@ -82,12 +83,12 @@
         transition: transform .3s;
     }
 
-    &::after {
-        display: flex;
-        content: '';
-        margin-top: 2rem;
-        margin-left: -9rem;
-        width: 330%;
-        border-top: 1px solid $color-primary;
-    }
+    // &::after {
+    //     display: flex;
+    //     content: '';
+    //     margin-top: 2rem;
+    //     margin-left: -9rem;
+    //     width: 330%;
+    //     border-top: 1px solid $color-primary;
+    // }
 }

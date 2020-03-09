@@ -1,0 +1,13 @@
+.divider {
+    border-bottom: 1px solid $color-primary;
+
+    &-first {
+        grid-area: div-1;
+    }
+    &-second {
+        grid-area: div-2;
+    }
+    &-third {
+        grid-area: div-3;
+    }
+}

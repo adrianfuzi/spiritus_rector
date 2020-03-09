@@ -12,8 +12,11 @@ const Sidebar = () => (
       <img className="sidebar__link-logo" src={logo} alt="logo" />
     </a>
     <LatestWorks />
+    <div className="divider divider-first"/>
     <Nav />
+    <div className="divider divider-second"/>
     <Social />
+    <div className="divider divider-third"/>
     <Copy />
   </div>
 )
