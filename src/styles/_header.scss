@@ -1,0 +1,47 @@
+.header {
+    grid-area: header;
+
+    // display: flex;
+    // justify-content: space-evenly;
+
+    padding: 1rem 0 1rem 2rem;
+    background-color: $color-secondary;
+    box-shadow: 0px 0px 5px $color-primary-2;
+
+    &__link {
+        width: 8rem;
+        height: 8rem;
+
+        @media only screen and (max-width: $bp-s-1) {
+            width: 6rem;
+            height: 6rem;
+        }
+
+        &-logo {
+            width: 8rem;
+            height: 8rem;
+
+            box-shadow: 0px 0px 8px $color-primary-2;
+            border-radius: 50%;
+
+            transition: box-shadow .5s;
+
+            &:hover {
+                cursor: pointer;
+    
+                box-shadow: 0px 0px 8px $color-primary-3;
+                transition: box-shadow .5s;
+            }
+
+            @media only screen and (max-width: $bp-s-1) {
+                width: 6rem;
+                height: 6rem;
+            }
+        }
+        
+    }
+
+    @media only screen and (min-width: $bp-m-2) {
+        display: none;
+    }
+}

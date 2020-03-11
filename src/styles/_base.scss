@@ -49,6 +49,8 @@ $font-family: 'Nunito Sans', sans-serif;
 $bp-l-1: 71.25em; // 1140px
 $bp-l-2: 66.25em; // 1060px
 $bp-m-1: 58.43em; // 935px
+$bp-m-2: 39.06em; // 625px
+$bp-s-1: 28.125em; // 450px
 
 
 * {
@@ -67,6 +69,10 @@ html {
 
     @media only screen and (max-width: $bp-m-1) {
         font-size: 50%;
+    }
+
+    @media only screen and (max-width: $bp-s-1) {
+        font-size: 45%;
     }
 }
 
@@ -94,6 +100,14 @@ body {
         grid-template-columns: 3fr 5fr;
         grid-template-areas:
         " sidebar content";
+    }
+
+    @media only screen and (max-width: $bp-m-2) {
+        grid-template-columns: auto;
+        grid-template-areas:
+        " header "
+        " content "
+        " footer ";
     }
 }
 
