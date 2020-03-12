@@ -31,10 +31,29 @@
         width: 100%;
         padding: 3rem 0 2rem 0;
     }
+    
+    @media only screen and (max-width: $bp-s-1) {
+        grid-template-columns: .2fr 4fr .2fr;
+    }
 
     &__title {
         grid-area: contentTitle;
         margin-bottom: 3rem;
+
+        &-count {
+            display: inline-block;
+            font-size: 1.6rem;
+            font-style: italic;
+            font-weight: 300;
+            text-transform: lowercase;
+            transform: translateY(-1.5rem);
+
+            @media only screen and (max-width: $bp-m-2) {
+                display: block;
+                margin-top: -3rem;
+                transform: none;
+            }
+        }
 
         @media only screen and (max-width: $bp-m-2) {
             text-align: center;

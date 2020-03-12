@@ -8,12 +8,16 @@ const tagPosts = ({ data, pageContext }) => {
   const { tag } = pageContext
   const { totalCount } = data.allMarkdownRemark
   // const pageHeader = `${totalCount} post${totalCount === 1 ? '' : 's'} tagged with "${tag}"`
-  const pageHeader = `${tag} - ${totalCount} bejegyzés`
+  const pageHeader = tag
+  const pageHeaderCount = `(${totalCount} bejegyzés)`
 
   return (
     <Layout pageTitle={pageHeader}>
       <div className="content">
-        <h1 className="content__title">{pageHeader}</h1>
+        <h1 className="content__title">
+          {pageHeader} {" "}
+          <span className="content__title-count">{pageHeaderCount}</span>
+        </h1>
         <div className="content__page">
           <div className="content__page--post">
             {data.allMarkdownRemark.edges.map(({ node }) => (
