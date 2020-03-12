@@ -1,6 +1,6 @@
 ---
 title: 'Az álmok világa'
-date: 2020.03.04.
+date: 2020. március 4.
 author: 'Julianne Walsh'
 image: '../../images/post6.jpg'
 tags:

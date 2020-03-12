@@ -1,6 +1,6 @@
 ---
 title: '5-MEO DMT és a nondualitás'
-date: 2020.03.03.
+date: 2020. március 3.
 author: 'Julianne Walsh'
 image: '../../images/post5.jpg'
 tags:

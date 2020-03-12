@@ -12,7 +12,7 @@ const postList = props => {
   return (
     <Layout pageTitle={`Page: ${currentPage}`}>
       <div className="content">
-        <h1 className="content__title">{currentPage}. oldal</h1>
+        {/* <h1 className="content__title">{currentPage}. oldal</h1> */}
         <div className="content__page">
           <div className="content__page--post">
             {posts.map(({ node }) => (

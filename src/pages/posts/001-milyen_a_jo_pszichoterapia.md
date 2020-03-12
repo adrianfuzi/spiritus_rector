@@ -1,6 +1,6 @@
 ---
 title: 'Milyen a jó pszichoterápia?'
-date: 2020.02.27.
+date: 2020. február 27.
 author: 'Julianne Walsh'
 image: '../../images/post1.jpg'
 tags:

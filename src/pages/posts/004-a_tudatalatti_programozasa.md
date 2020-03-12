@@ -1,6 +1,6 @@
 ---
 title: 'A tudatalatti programozása'
-date: 2020.03.02.
+date: 2020. március 2.
 author: 'Julianne Walsh'
 image: '../../images/post4.jpg'
 tags:

@@ -14,17 +14,19 @@ const SinglePost = ({ data }) => {
       <div className="content">
         <div className="content__page">
           <div className="post">
-            <figure className="post__figure">
-              <Img
-                className="post__figure--imagePost"
-                fluid={post.image.childImageSharp.fluid}
-              />
-            </figure>
             <div className="post__card">
               <h2 className="post__card--title">{post.title}</h2>
               <div className="post__card--info">
-                <p>{post.date}</p> by <p>{post.author}</p>
+                <p>
+                  By {post.author} - {post.date}
+                </p>
               </div>
+              <figure className="post__card--figure">
+                <Img
+                  className="post__card--figure-imagePost"
+                  fluid={post.image.childImageSharp.fluid}
+                />
+              </figure>
               <div
                 className="post__card--body"
                 dangerouslySetInnerHTML={{ __html: data.markdownRemark.html }}

@@ -1,44 +1,52 @@
 .post {
     margin-bottom: 4rem;
 
-    &__figure {
-        margin-bottom: 1rem;
-
-        &--image {
-            border-radius: 2px;
-            filter: grayscale(50%);
-            // box-shadow: 3px 4px 4px rgba(0, 0, 0, 0.25);
-
-            transition: all .3s;
-
-
-            &:hover {
-                // box-shadow: 3px 4px 4px rgba(0, 0, 0, 0.25);
-                box-shadow: 0px 0px 15px $color-primary-2;
-                transition: all .3s;
-            }
-        }
-
-        // Inside Post
-        &--imagePost {
-            margin-top: 8rem;
-            border-radius: 2px;
-            filter: grayscale(50%);
-        }
-    }
-
     &__card {
 
         &--title {
             // text-align: center;
             font-size: 3.2rem;
-            margin-bottom: 1rem;
+            font-weight: 400;
+
+            @media only screen and (max-width: $bp-m-2) {
+                text-align: center;
+            }
         }
 
         &--info {
             font-size: 1.3rem;
             font-style: italic;
-            margin-bottom: 1rem;
+            font-weight: 300;
+            margin-bottom: 2.5rem;
+
+            @media only screen and (max-width: $bp-m-2) {
+                text-align: center;
+            }
+        }
+
+        &--figure {
+            margin-bottom: 3rem;
+    
+            &-image {
+                border-radius: 2px;
+                filter: grayscale(50%);
+                // box-shadow: 3px 4px 4px rgba(0, 0, 0, 0.25);
+    
+                transition: all .3s;
+    
+    
+                &:hover {
+                    // box-shadow: 3px 4px 4px rgba(0, 0, 0, 0.25);
+                    box-shadow: 0px 0px 15px $color-primary-2;
+                    transition: all .3s;
+                }
+            }
+
+            // Inside Post
+            &-imagePost {
+                border-radius: 2px;
+                filter: grayscale(50%);
+            }
         }
 
         &--body {
@@ -60,7 +68,6 @@
                 margin-right: 1rem;
                 transition: all .3s;
 
-
                 &:hover {
                     background-color: $color-primary-2;
                     transition: all .3s;
@@ -80,6 +87,11 @@
                     text-shadow: 0px 0px 15px $color-primary-3;
     
                     transition: text-shadow .3s;
+
+                    .post__card--more-arrow {
+                        transition: transform .3s;
+                        transform: translateX(.5rem);
+                    }
                 }
             }
 
@@ -88,6 +100,10 @@
                 content: '';
                 margin-top: 2rem;
                 border-top: 1px solid $color-primary;
+            }
+
+            &-arrow {
+                transition: transform .3s;
             }
         }
     }

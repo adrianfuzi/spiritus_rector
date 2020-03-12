@@ -1,6 +1,6 @@
 ---
 title: 'Hogyan indukáljunk testen kívüli élményt?'
-date: 2020.03.05.
+date: 2020. március 5.
 author: 'Julianne Walsh'
 image: '../../images/post7.jpg'
 tags:

@@ -1,6 +1,6 @@
 ---
 title: 'Tarot és archetípusok'
-date: 2020.03.06.
+date: 2020. március 6.
 author: 'Julianne Walsh'
 image: '../../images/post8.jpg'
 tags:

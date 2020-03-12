@@ -1,6 +1,6 @@
 ---
 title: 'A gombák üzenete'
-date: 2020.02.28.
+date: 2020. február 28.
 author: 'Julianne Walsh'
 image: '../../images/post2.jpg'
 tags:

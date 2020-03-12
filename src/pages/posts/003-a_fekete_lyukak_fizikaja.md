@@ -1,6 +1,6 @@
 ---
 title: 'A fekete lyukak fizikája'
-date: 2020.03.01.
+date: 2020. március 1.
 author: 'Julianne Walsh'
 image: '../../images/post3.jpg'
 tags:

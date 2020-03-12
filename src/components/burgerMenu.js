@@ -24,7 +24,7 @@ class BurgerMenu extends React.Component {
           onClick={this.openMenuHandler}
           onKeyDown={this.openMenuHandler}
           role="button"
-          tabIndex={0}
+          // tabIndex={0}
         >
           <div className="burger__bar-1"></div>
           <div className="burger__bar-2"></div>
