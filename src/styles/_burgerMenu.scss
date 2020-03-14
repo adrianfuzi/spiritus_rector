@@ -1,7 +1,7 @@
 .burger {
 
     position: fixed;
-    top: 2rem;
+    top: 2.6rem;
     right: 2rem;
 
     z-index: 100;
@@ -19,9 +19,11 @@
         height: 3px;
         background-color: $color-primary-2;
         border-radius: 1px;
+        box-shadow: 0px 0px 5px $color-primary-2;
         margin: 6px 0;
-        transition: 0.4s;
+        transition: 0.5s;
     }
+
 
     &__change &__bar-1 {
         transform: rotate(-135deg) translate(-6px, -6px);
@@ -40,19 +42,21 @@
 .burger-menu {
 
     position: fixed;
-    background-color: $color-secondary-2;
-    box-shadow: 0px 0px 5px $color-primary-2;
+    background-color: $color-secondary-3;
+    border: 1px solid $color-primary-2;
     height: calc(100vh + 1.2rem);
     width: 25rem;
+    opacity: .3;
 
     z-index: 99;
     right: -33rem;
     top: -1rem;
 
-    transition: right 0.5s;
+    transition: all 0.5s;
 
     &-visible {
         right: -2rem;
+        opacity: 1;
     }
 
     &__nav {

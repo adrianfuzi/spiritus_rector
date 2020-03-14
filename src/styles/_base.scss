@@ -25,6 +25,7 @@ $color-secondary-3: #101011;
 
 $color-text-primary: #e0ddec;
 $color-text-secondary: #c1bfce;
+$color-text-highlight: rgba(50, 36, 106, 0.99);
 
 //TODO/ Color Theme 4 //
 // $color-primary: #1c263d;
@@ -49,7 +50,8 @@ $font-family: 'Nunito Sans', sans-serif;
 $bp-l-1: 71.25em; // 1140px
 $bp-l-2: 66.25em; // 1060px
 $bp-m-1: 58.43em; // 935px
-$bp-m-2: 39.06em; // 625px
+$bp-m-2: 53.125em; // 850px
+$bp-m-3: 37.5em; // 600px
 $bp-s-1: 28.125em; // 450px
 
 
@@ -115,7 +117,7 @@ h1 {
 }
 
 ::selection {
-    background: $color-primary-2;
+    background: $color-text-highlight;
 }
 
 a {
