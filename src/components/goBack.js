@@ -9,6 +9,8 @@ const GoBack = () => {
             <img className="back__arrow" src={backArrow} alt=""/> Vissza
           </button>
         ) : null
+    } else {
+        return null
     }
 }
 
