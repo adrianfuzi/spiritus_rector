@@ -4,8 +4,8 @@ const PaginationLinks = ({ currentPage, numberOfPages }) => {
   const isFirst = currentPage === 1
   const isLast = currentPage === numberOfPages
   const previousPage =
-    currentPage - 1 === 1 ? "/" : "/page/" + (currentPage - 1).toString()
-  const nextPage = "/page/" + (currentPage + 1).toString()
+    currentPage - 1 === 1 ? "/" : "/oldal/" + (currentPage - 1).toString()
+  const nextPage = "/oldal/" + (currentPage + 1).toString()
   return (
     <div className="pagination">
       {isFirst ? (
@@ -29,7 +29,7 @@ const PaginationLinks = ({ currentPage, numberOfPages }) => {
           <div className="pagination__item" key={`page-number${i + 1}`}>
             <a
               className="pagination__item--link pagination__item--link-active"
-              href={`/${i === 0 ? "" : "page/" + (i + 1)}`}
+              href={`/${i === 0 ? "" : "oldal/" + (i + 1)}`}
             >
               {i + 1}
             </a>
@@ -38,7 +38,7 @@ const PaginationLinks = ({ currentPage, numberOfPages }) => {
           <div className="pagination__item" key={`page-number${i + 1}`}>
             <a
               className="pagination__item--link"
-              href={`/${i === 0 ? "" : "page/" + (i + 1)}`}
+              href={`/${i === 0 ? "" : "oldal/" + (i + 1)}`}
             >
               {i + 1}
             </a>

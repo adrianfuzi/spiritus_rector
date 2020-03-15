@@ -113,7 +113,7 @@ exports.createPages = ({ actions , graphql}) => {
             if (isFirstPage) return
 
             createPage({
-                path:`/page/${currentPage}`,
+                path:`/oldal/${currentPage}`,
                 component: templates.postList,
                 context: {
                     limit: postsPerPage,

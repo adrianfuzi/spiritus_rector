@@ -6,8 +6,11 @@ import { slugify } from "../util/utilityFunctions"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
+import GoBack from "../components/goBack"
+
 const SinglePost = ({ data }) => {
   const post = data.markdownRemark.frontmatter
+
   return (
     <Layout>
       <SEO title={post.title} />
@@ -40,6 +43,8 @@ const SinglePost = ({ data }) => {
                   </li>
                 ))}
               </ul>
+              <GoBack/>
+              {/* <button className="post__card--back" onClick={() => window.history.back()}>Vissza</button> */}
             </div>
           </div>
         </div>
