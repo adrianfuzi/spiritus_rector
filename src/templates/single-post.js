@@ -7,9 +7,12 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 
 import GoBack from "../components/goBack"
+import facebook from "../images/facebook.svg"
 
-const SinglePost = ({ data }) => {
+const SinglePost = ({ data, pageContext }) => {
   const post = data.markdownRemark.frontmatter
+
+  const baseUrl = "https://spiritus-rector.netlify.com/"
 
   return (
     <Layout>
@@ -43,8 +46,32 @@ const SinglePost = ({ data }) => {
                   </li>
                 ))}
               </ul>
-              <GoBack/>
-              {/* <button className="post__card--back" onClick={() => window.history.back()}>Vissza</button> */}
+              <div className="post__card--share">
+                <h3>Megosztás:</h3>
+                <ul>
+                  <li>
+                    <a
+                      className="post__card--share-link"
+                      href={
+                        "https://www.facebook.com/sharer/sharer.php?u=" +
+                        baseUrl +
+                        pageContext.slug
+                      }
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <span className="post__card--share-link_name">
+                        Facebook
+                      </span>
+                      <img
+                        className="post__card--share-link_icon"
+                        src={facebook}
+                      />
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <GoBack />
             </div>
           </div>
         </div>
