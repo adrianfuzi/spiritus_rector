@@ -66,6 +66,7 @@ const SinglePost = ({ data, pageContext }) => {
                       <img
                         className="post__card--share-link_icon"
                         src={facebook}
+                        alt="facebook"
                       />
                     </a>
                   </li>
