@@ -45,8 +45,9 @@ $color-disabled: #242229;
 // $color-text-primary: #EBEBEB;
 // $color-text-secondary: #a1a1a1;
 
-$font-family: 'Nunito Sans', sans-serif;
+$font-family: "Nunito Sans", sans-serif;
 
+$bp-h-1: 106.25em; //1700px
 $bp-l-1: 71.25em; // 1140px
 $bp-l-2: 66.25em; // 1060px
 $bp-m-1: 58.43em; // 935px
@@ -54,73 +55,74 @@ $bp-m-2: 53.125em; // 850px
 $bp-m-3: 37.5em; // 600px
 $bp-s-1: 28.125em; // 450px
 
-
 * {
-    box-sizing: inherit;
-    margin: 0;
-    padding: 0;
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
 }
 
 html {
-    box-sizing: border-box;
-    font-size: 62.5%; // 1rem = 10px, 10px/16 = 62.5%
+  box-sizing: border-box;
+  font-size: 62.5%; // 1rem = 10px, 10px/16 = 62.5%
 
-    @media only screen and (max-width: $bp-l-2) {
-        font-size: 55%;
-    }
+  @media only screen and (min-width: $bp-h-1) {
+    font-size: 88.5%;
+  }
 
-    @media only screen and (max-width: $bp-m-1) {
-        font-size: 50%;
-    }
+  @media only screen and (max-width: $bp-l-2) {
+    font-size: 55%;
+  }
+
+  @media only screen and (max-width: $bp-m-1) {
+    font-size: 50%;
+  }
 }
 
 body {
-    background: $color-background;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    height: 100vh;
-    font-family: $font-family;
-    font-weight: 400;
-    line-height: 1.6;
-    color: $color-text-primary;
+  background: $color-background;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 100vh;
+  font-family: $font-family;
+  font-weight: 400;
+  line-height: 1.6;
+  color: $color-text-primary;
 }
 
 .main {
-    height: 100vh;
+  height: 100vh;
 
-    display: grid;
-    grid-template-columns: .5fr 2fr .5fr 3fr .5fr;
-    grid-template-rows: auto;
+  display: grid;
+  grid-template-columns: 0.5fr 2fr 0.5fr 3fr 0.5fr;
+  grid-template-rows: auto;
+  grid-template-areas: ". sidebar . content .";
+
+  @media only screen and (max-width: $bp-l-2) {
+    grid-template-columns: 3fr 5fr;
+    grid-template-areas: " sidebar content";
+  }
+
+  @media only screen and (max-width: $bp-m-2) {
+    grid-template-columns: auto;
     grid-template-areas:
-        ". sidebar . content .";
-
-    @media only screen and (max-width: $bp-l-2) {
-        grid-template-columns: 3fr 5fr;
-        grid-template-areas:
-        " sidebar content";
-    }
-
-    @media only screen and (max-width: $bp-m-2) {
-        grid-template-columns: auto;
-        grid-template-areas:
-        " header "
-        " content "
-        " footer ";
-    }
+      " header "
+      " content "
+      " footer ";
+  }
 }
 
 h1 {
-    font-size: 5rem;
-    font-weight: 300;
-    line-height: 7rem;
-    text-transform: capitalize;
+  font-size: 5rem;
+  font-weight: 300;
+  line-height: 7rem;
+  text-transform: capitalize;
 }
 
 ::selection {
-    background: $color-text-highlight;
+  background: $color-text-highlight;
 }
 
 a {
-    text-decoration: none;
-    color: inherit;
+  text-decoration: none;
+  color: inherit;
 }
